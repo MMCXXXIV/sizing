@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 440px;
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+.main {
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  width: 390px;
+  text-align: center;
+  outline: 1px solid red;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}

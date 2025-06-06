@@ -9,7 +9,7 @@
 .app {
   max-width: 440px;
   margin: 0 auto;
-  outline: 1px solid blue;
+  outline: 1px solid green;
 }
 
 .main {
@@ -18,10 +18,44 @@
   box-sizing: border-box;
   max-width: 390px;
   text-align: center;
-  outline: 1px solid red;
+  outline: 1px solid purple;
   position: relative;
 }
 
-img {
-  width: 100%;
+.img-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Optional spacing between images */
+  overflow: hidden;
+}
+
+/* Fixed image sizes */
+.img-left,
+.img-right {
+  width: 49px;
+  height: 332px;
+  object-fit: cover;
+}
+
+.img-main {
+  width: 279px;
+  height: 364px;
+  object-fit: cover;
+}
+
+/* html,
+body {
+  overflow-x: scroll !important;
+} */
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 4px;
+  height: 100vh;
+  background: red;
+  z-index: 9999;
 }
